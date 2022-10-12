@@ -20,7 +20,7 @@ jinvlogit
 \examples{
 # Using standard implementation
 x <- rnorm(10)
-jlogit(x)
+jinvlogit(x)
 
 # Using values between 0 and 0.5
 jinvlogit(x, upper = 0.5)
