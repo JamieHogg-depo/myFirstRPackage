@@ -1,0 +1,33 @@
+---
+title: "Using_funcs"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using_funcs}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(myFirstRPackage)
+```
+
+# How to use the jinvlogit function
+
+```{r}
+# draws from data
+x <- rnorm(100)
+
+# convert to constrained space
+p <- jinvlogit(x)
+
+# check histograms
+hist(p)
+```
+
