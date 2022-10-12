@@ -1,0 +1,20 @@
+Package: myFirstRPackage
+Title: Everyday R solutions
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jamie",
+           family = "Hogg",
+           role = c("aut", "cre"),
+           email = "james.hogg@hdr.qut.edu.au",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Several R functions that I use in my current R code.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
