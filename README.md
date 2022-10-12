@@ -20,6 +20,10 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(myFirstRPackage)
-## basic example code
+# Create a weight matrix
+W <- matrix(c(0,1,0,1,0,1,0,1,0), byrow = T, ncol = 3)
+
+# return the scale parameter
+getBYM2scale(W)
 ```
 
