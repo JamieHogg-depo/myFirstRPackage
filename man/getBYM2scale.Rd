@@ -16,6 +16,6 @@ numeric scaling factor for BYM2 model
 getBYM2scale
 }
 \examples{
-W <- matrix(c(0,1,0,1,0,1,0,1,0), byrow = T, ncol = 3)
+W <- matrix(c(0,1,0,1,0,1,0,1,0), byrow = TRUE, ncol = 3)
 getBYM2scale(W)
 }

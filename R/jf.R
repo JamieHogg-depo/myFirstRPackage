@@ -39,23 +39,3 @@ jUnique <- function(x){
   r <- unique(x)
   ifelse(is.na(r), "NA", r)
 }
-
-#' getUnique
-#'
-#' @param .data
-#'
-#' @return data frame with all combinations of the rows
-#' @export
-#' @import dplyr
-#' @import stringr
-#'
-#' @examples x <- rnorm(10)
-getUnique <- function(.data){
-  .data %>%
-    purrr::map(~str_c(jUnique(.x), collapse = ",")) %>%
-    bind_rows() %>%
-    tidyr::pivot_longer(cols = everything()) %>%
-    mutate(n = str_count(value, ",") + 1) %>%
-    relocate(name, n) %>%
-    filter(n > 1)
-}

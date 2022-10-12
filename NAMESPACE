@@ -2,10 +2,7 @@
 
 export("%>%")
 export(getBYM2scale)
-export(getUnique)
 export(jinvlogit)
 export(jlogit)
 import(Matrix)
-import(dplyr)
-import(stringr)
 importFrom(magrittr,"%>%")

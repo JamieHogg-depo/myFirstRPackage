@@ -7,12 +7,12 @@
 #' @export
 #'
 #' @examples
-#' W <- matrix(c(0,1,0,1,0,1,0,1,0), byrow = T, ncol = 3)
+#' W <- matrix(c(0,1,0,1,0,1,0,1,0), byrow = TRUE, ncol = 3)
 #' getBYM2scale(W)
 getBYM2scale <- function(adj_mat){
 
   # get necessary arguments for function
-  adj_mat <- as(adj_mat, "sparseMatrix")
+  adj_mat <- methods::as(adj_mat, "sparseMatrix")
   M <- nrow(adj_mat)
 
   # ICAR precision matrix
