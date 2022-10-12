@@ -4,6 +4,7 @@
 #'
 #' @return numeric scaling factor for BYM2 model
 #' @import Matrix
+#' @importFrom methods as
 #' @export
 #'
 #' @examples
@@ -12,7 +13,7 @@
 getBYM2scale <- function(adj_mat){
 
   # get necessary arguments for function
-  adj_mat <- methods::as(adj_mat, "sparseMatrix")
+  adj_mat <- as(adj_mat, "sparseMatrix")
   M <- nrow(adj_mat)
 
   # ICAR precision matrix
