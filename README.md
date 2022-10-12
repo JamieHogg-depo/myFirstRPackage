@@ -2,6 +2,7 @@
 # myFirstRPackage
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/JamieHogg-depo/myFirstRPackage/workflows/R-CMD-check/badge.svg)](https://github.com/JamieHogg-depo/myFirstRPackage/actions)
 <!-- badges: end -->
 
 The goal of myFirstRPackage is to help me run some analysis. 
