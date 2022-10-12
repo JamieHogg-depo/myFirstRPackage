@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/JamieHogg-depo/myFirstRPackage/workflows/R-CMD-check/badge.svg)](https://github.com/JamieHogg-depo/myFirstRPackage/actions)
+[![Codecov test coverage](https://codecov.io/gh/JamieHogg-depo/myFirstRPackage/branch/main/graph/badge.svg)](https://codecov.io/gh/JamieHogg-depo/myFirstRPackage?branch=main)
 <!-- badges: end -->
 
 The goal of myFirstRPackage is to help me run some analysis. 
