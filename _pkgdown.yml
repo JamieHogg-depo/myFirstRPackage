@@ -1,4 +1,14 @@
-url: ~
+url: https://jamiehogg-depo.github.io/myFirstRPackage/
 template:
   bootstrap: 5
+  bootswatch: journal
+reference:
+- title: Exported functions
+  desc: Functions for the users
+- contents:
+  - jlogit
+  - jinvlogit
+- subtitle: Other stuff
+- contents:
+  - getBYM2scale
 
