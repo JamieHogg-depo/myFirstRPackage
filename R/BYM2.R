@@ -2,7 +2,7 @@
 #'
 #' @param adj_mat  fully connected binary weight matrix
 #'
-#' @return numeric scaling factor for BYM2 model
+#' @return double scaling factor for BYM2 model
 #' @import Matrix
 #' @importFrom methods as
 #' @export
@@ -11,6 +11,18 @@
 #' W <- matrix(c(0,1,0,1,0,1,0,1,0), byrow = TRUE, ncol = 3)
 #' getBYM2scale(W)
 getBYM2scale <- function(adj_mat){
+
+  # check diagonals
+  if(!all(diag(adj_mat) == 0)) stop("Diagonals must be zero...")
+
+  # check values are binary
+  if(!all(unique(as.vector(adj_mat)) %in% c(0,1))) stop("All values must be zero or one...")
+
+  # check if symmetric
+  if(!isSymmetric(adj_mat)) stop("Matrix is not symmetric...")
+
+  # check for fully connected
+  if(igraph::components(igraph::graph.adjacency(adj_mat))$no != 1) stop("Graph not fully connected...")
 
   # get necessary arguments for function
   adj_mat <- as(adj_mat, "sparseMatrix")

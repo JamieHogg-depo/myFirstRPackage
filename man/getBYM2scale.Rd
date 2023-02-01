@@ -10,7 +10,7 @@ getBYM2scale(adj_mat)
 \item{adj_mat}{fully connected binary weight matrix}
 }
 \value{
-numeric scaling factor for BYM2 model
+double scaling factor for BYM2 model
 }
 \description{
 getBYM2scale
