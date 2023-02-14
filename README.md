@@ -44,3 +44,11 @@ jinvlogit(x_unc, upper = 0.5)
 jinvlogit(x_unc, upper = 0.1)
 ```
 
+## Unique values for each column
+
+While working on large health datasets I found myself constantly interested in the the number and list of unique values in each column of a dataset. The `getUnique` function reports exactly this! 
+
+```r
+mtcars %>% getUnique()
+```
+
