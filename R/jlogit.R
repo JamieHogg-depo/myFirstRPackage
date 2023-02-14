@@ -34,8 +34,3 @@ jlogit <- function(p, upper = 1){
 jinvlogit <- function(eta, upper = 1){
   (upper * exp(eta))/(1+exp(eta))
 }
-
-jUnique <- function(x){
-  r <- unique(x)
-  ifelse(is.na(r), "NA", r)
-}
