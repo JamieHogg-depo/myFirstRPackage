@@ -2,6 +2,7 @@
 
 export("%>%")
 export(getBYM2scale)
+export(getUnique)
 export(jinvlogit)
 export(jlogit)
 export(vectorSumtoZero)
