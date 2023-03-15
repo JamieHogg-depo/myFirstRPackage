@@ -4,11 +4,18 @@ template:
   bootswatch: journal
 reference:
 - title: Exported functions
-  desc: Functions for the users
+  #desc: Functions for the users
+- subtitle: Spatial functions
+- contents:
+  - getBYM2scale
+- subtitle: Short helper functions
 - contents:
   - jlogit
   - jinvlogit
-- subtitle: Other stuff
+  - vectorSumtoZero
+- subtitle: Data manipulation
 - contents:
-  - getBYM2scale
+  - getUnique
+  - addGroupID
+  - dropConstantCols
 

@@ -2,6 +2,7 @@
 
 export("%>%")
 export(addGroupID)
+export(dropConstantCols)
 export(getBYM2scale)
 export(getUnique)
 export(jinvlogit)

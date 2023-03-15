@@ -10,9 +10,9 @@ getUnique(.data)
 \item{.data}{input data as used in a pipe}
 }
 \value{
-Dataframe where the rows are the variables of \code{.data}. For each
-variable the function returns the number of unique values, \code{n}, and what these
-values are, \code{value}.
+Dataframe where the rows are the columns of \code{.data}. For each
+variable the function returns the number of unique values, \code{nu_unique}, and what these
+values are, \code{unique_values}. NOTE: Columns that are constant are not shown.
 }
 \description{
 getUnique
