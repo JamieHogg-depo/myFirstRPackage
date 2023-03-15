@@ -22,7 +22,16 @@
     <loc>https://jamiehogg-depo.github.io/myFirstRPackage/index.html</loc>
   </url>
   <url>
+    <loc>https://jamiehogg-depo.github.io/myFirstRPackage/reference/addGroupID.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiehogg-depo.github.io/myFirstRPackage/reference/dropConstantCols.html</loc>
+  </url>
+  <url>
     <loc>https://jamiehogg-depo.github.io/myFirstRPackage/reference/getBYM2scale.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiehogg-depo.github.io/myFirstRPackage/reference/getUnique.html</loc>
   </url>
   <url>
     <loc>https://jamiehogg-depo.github.io/myFirstRPackage/reference/index.html</loc>
@@ -38,5 +47,8 @@
   </url>
   <url>
     <loc>https://jamiehogg-depo.github.io/myFirstRPackage/reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>https://jamiehogg-depo.github.io/myFirstRPackage/reference/vectorSumtoZero.html</loc>
   </url>
 </urlset>
